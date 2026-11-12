@@ -7,7 +7,7 @@ const keyOf = x => x.id || [x.roomId, x.userId, x.testId || x.part || ''].join('
 let rev = 0; const db = Object.fromEntries(COLS.map(c => [c, new Map()]));
 try { const s = JSON.parse(fs.readFileSync(FILE, 'utf8')); rev = s.rev || 0; COLS.forEach(c => (s.db[c] || []).forEach(([k, r]) => db[c].set(k, r))); } catch {}
 const state = () => ({ rev, db: Object.fromEntries(COLS.map(c => [c, [...db[c].values()]])) });
-const save = () => fs.writeFileSync(FILE, JSON.stringify({ rev, db: Object.fromEntries(COLS.map(c => [c, [...db[c].entries()]])) }));
+const save = () => fs.writeFileSync(FILE, JSON.stringify({ rev, db: Object.fromEntries(COLS.map(c => [c, [...db[c].entries()]])) }, null, 2) + '\n');
 const clients = new Set();
 setInterval(() => clients.forEach(c => c.write(': ping\n\n')), 25000);
 

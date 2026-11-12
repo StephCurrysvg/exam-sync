@@ -1,1 +1,387 @@
-{"rev":3,"db":{"users":[["u-student",{"id":"u-student","login":"user","password":"1","name":"Студент","role":"student"}],["u-teacher",{"id":"u-teacher","login":"teacher","password":"admin","name":"Преподаватель","role":"teacher"}],["u-student1",{"id":"u-student1","login":"user1","password":"1","name":"Студент 1","role":"student"}],["u-student2",{"id":"u-student2","login":"user2","password":"1","name":"Студент 2","role":"student"}],["u-student3",{"id":"u-student3","login":"user3","password":"1","name":"Студент 3","role":"student"}],["u-student4",{"id":"u-student4","login":"user4","password":"1","name":"Студент 4","role":"student"}]],"tests":[["t-grammar",{"id":"t-grammar","title":"Grammar: Present & Past","description":"Present Simple, Past Simple, Present Perfect.","timeLimit":10,"passPercent":60,"shuffle":false,"showAnswers":true,"questions":[{"id":"8dixm320xir","type":"single","text":"She ___ to school every day.","options":["go","goes","going","gone"],"correct":1,"points":2},{"id":"hhxe2560xir","type":"single","text":"I ___ this film yesterday.","options":["have seen","saw","see","was seen"],"correct":1,"points":2},{"id":"uabg1f40xir","type":"input","text":"Put the verb in the correct form:\nThey ___ (not / like) coffee.","answers":["don't like","do not like"],"caseSensitive":false,"points":2},{"id":"wqz1o8a0xir","type":"tf","text":"We use Present Perfect with the word \"yesterday\".","correct":false,"points":1},{"id":"jw3b2oy0xir","type":"multi","text":"Choose the irregular verbs.","options":["go","play","write","walk","buy"],"correct":[0,2,4],"partial":true,"points":3},{"id":"1yp2qdv0xir","type":"order","text":"Make a question.","items":["Have","you","ever","been","to","London?"],"partial":false,"points":2}]}],["t-vocab",{"id":"t-vocab","title":"Vocabulary & Articles","description":"Экзаменационная лексика и артикли.","timeLimit":8,"passPercent":60,"shuffle":false,"showAnswers":true,"questions":[{"id":"yiu0chf0xir","type":"match","text":"Match the words with their translations.","pairs":[{"label":"achieve","img":"","right":"достигать"},{"label":"evidence","img":"","right":"доказательство"},{"label":"improve","img":"","right":"улучшать"},{"label":"issue","img":"","right":"проблема"}],"partial":true,"points":4},{"id":"t6gz64y0xir","type":"single","text":"I saw ___ elephant at the zoo.","options":["a","an","the"],"correct":1,"points":1},{"id":"5s94zov0xir","type":"single","text":"___ sun is very hot today.","options":["A","An","The"],"correct":2,"points":1},{"id":"okcas790xir","type":"single","text":"\"However\" is closest in meaning to…","options":["therefore","but","because","also"],"correct":1,"points":2},{"id":"d355k2g0xir","type":"tf","text":"\"Significant\" means «незначительный».","correct":false,"points":1}]}]],"rooms":[["r-demo",{"id":"r-demo","title":"Пробный экзамен по английскому","description":"Тест, эссе и устная часть. Спикинг откроется после теста и письменной работы.","open":true,"createdAt":1794473224371,"test":{"on":true,"testIds":["t-grammar","t-vocab"],"max":40},"writing":{"on":true,"prompt":"Write an essay (120–180 words).\nTopic: Is online learning as effective as classroom learning? Give reasons and examples.","minWords":120,"max":30},"speaking":{"on":true,"prompt":"Part 1. Tell me about yourself: your studies and hobbies.\nPart 2. Describe a skill you learned recently. How did you learn it? Why was it useful?\nPart 3. Does technology make learning easier? Why or why not?","minutes":5,"max":30}}],["aat1qae2ecj",{"id":"aat1qae2ecj","title":"экзамен","description":"","open":true,"createdAt":1794473292835,"test":{"on":true,"testIds":["t-grammar"],"max":40},"writing":{"on":true,"prompt":"эссе","minWords":120,"max":30},"speaking":{"on":true,"prompt":"писька","minutes":5,"max":30}}]],"attempts":[["h5fxp99p6nt",{"id":"h5fxp99p6nt","userId":"u-student","roomId":"r-demo","testId":"t-vocab","testTitle":"Vocabulary & Articles","startedAt":1794455844764,"finishedAt":1794455880184,"duration":35420,"auto":false,"timeLimit":8,"score":6,"max":9,"percent":67,"passed":true,"passPercent":60,"showAnswers":true,"details":[{"text":"Match the words with their translations.","type":"match","time":14805,"earned":2,"max":4,"status":"partial","user":"achieve → достигать; evidence → проблема; improve → улучшать; issue → доказательство","corr":"achieve → достигать; evidence → доказательство; improve → улучшать; issue → проблема"},{"text":"I saw ___ elephant at the zoo.","type":"single","time":5773,"earned":0,"max":1,"status":"wrong","user":"the","corr":"an"},{"text":"___ sun is very hot today.","type":"single","time":3903,"earned":1,"max":1,"status":"correct","user":"The","corr":"The"},{"text":"\"However\" is closest in meaning to…","type":"single","time":6235,"earned":2,"max":2,"status":"correct","user":"but","corr":"but"},{"text":"\"Significant\" means «незначительный».","type":"tf","time":4704,"earned":1,"max":1,"status":"correct","user":"Неверно","corr":"Неверно"}]}]],"writings":[],"queue":[],"grades":[]}}
+{
+  "rev": 3,
+  "db": {
+    "users": [
+      [
+        "u-student",
+        {
+          "id": "u-student",
+          "login": "user",
+          "password": "1",
+          "name": "Студент",
+          "role": "student"
+        }
+      ],
+      [
+        "u-teacher",
+        {
+          "id": "u-teacher",
+          "login": "teacher",
+          "password": "admin",
+          "name": "Преподаватель",
+          "role": "teacher"
+        }
+      ],
+      [
+        "u-student1",
+        {
+          "id": "u-student1",
+          "login": "user1",
+          "password": "1",
+          "name": "Студент 1",
+          "role": "student"
+        }
+      ],
+      [
+        "u-student2",
+        {
+          "id": "u-student2",
+          "login": "user2",
+          "password": "1",
+          "name": "Студент 2",
+          "role": "student"
+        }
+      ],
+      [
+        "u-student3",
+        {
+          "id": "u-student3",
+          "login": "user3",
+          "password": "1",
+          "name": "Студент 3",
+          "role": "student"
+        }
+      ],
+      [
+        "u-student4",
+        {
+          "id": "u-student4",
+          "login": "user4",
+          "password": "1",
+          "name": "Студент 4",
+          "role": "student"
+        }
+      ]
+    ],
+    "tests": [
+      [
+        "t-grammar",
+        {
+          "id": "t-grammar",
+          "title": "Grammar: Present & Past",
+          "description": "Present Simple, Past Simple, Present Perfect.",
+          "timeLimit": 10,
+          "passPercent": 60,
+          "shuffle": false,
+          "showAnswers": true,
+          "questions": [
+            {
+              "id": "8dixm320xir",
+              "type": "single",
+              "text": "She ___ to school every day.",
+              "options": [
+                "go",
+                "goes",
+                "going",
+                "gone"
+              ],
+              "correct": 1,
+              "points": 2
+            },
+            {
+              "id": "hhxe2560xir",
+              "type": "single",
+              "text": "I ___ this film yesterday.",
+              "options": [
+                "have seen",
+                "saw",
+                "see",
+                "was seen"
+              ],
+              "correct": 1,
+              "points": 2
+            },
+            {
+              "id": "uabg1f40xir",
+              "type": "input",
+              "text": "Put the verb in the correct form:\nThey ___ (not / like) coffee.",
+              "answers": [
+                "don't like",
+                "do not like"
+              ],
+              "caseSensitive": false,
+              "points": 2
+            },
+            {
+              "id": "wqz1o8a0xir",
+              "type": "tf",
+              "text": "We use Present Perfect with the word \"yesterday\".",
+              "correct": false,
+              "points": 1
+            },
+            {
+              "id": "jw3b2oy0xir",
+              "type": "multi",
+              "text": "Choose the irregular verbs.",
+              "options": [
+                "go",
+                "play",
+                "write",
+                "walk",
+                "buy"
+              ],
+              "correct": [
+                0,
+                2,
+                4
+              ],
+              "partial": true,
+              "points": 3
+            },
+            {
+              "id": "1yp2qdv0xir",
+              "type": "order",
+              "text": "Make a question.",
+              "items": [
+                "Have",
+                "you",
+                "ever",
+                "been",
+                "to",
+                "London?"
+              ],
+              "partial": false,
+              "points": 2
+            }
+          ]
+        }
+      ],
+      [
+        "t-vocab",
+        {
+          "id": "t-vocab",
+          "title": "Vocabulary & Articles",
+          "description": "Экзаменационная лексика и артикли.",
+          "timeLimit": 8,
+          "passPercent": 60,
+          "shuffle": false,
+          "showAnswers": true,
+          "questions": [
+            {
+              "id": "yiu0chf0xir",
+              "type": "match",
+              "text": "Match the words with their translations.",
+              "pairs": [
+                {
+                  "label": "achieve",
+                  "img": "",
+                  "right": "достигать"
+                },
+                {
+                  "label": "evidence",
+                  "img": "",
+                  "right": "доказательство"
+                },
+                {
+                  "label": "improve",
+                  "img": "",
+                  "right": "улучшать"
+                },
+                {
+                  "label": "issue",
+                  "img": "",
+                  "right": "проблема"
+                }
+              ],
+              "partial": true,
+              "points": 4
+            },
+            {
+              "id": "t6gz64y0xir",
+              "type": "single",
+              "text": "I saw ___ elephant at the zoo.",
+              "options": [
+                "a",
+                "an",
+                "the"
+              ],
+              "correct": 1,
+              "points": 1
+            },
+            {
+              "id": "5s94zov0xir",
+              "type": "single",
+              "text": "___ sun is very hot today.",
+              "options": [
+                "A",
+                "An",
+                "The"
+              ],
+              "correct": 2,
+              "points": 1
+            },
+            {
+              "id": "okcas790xir",
+              "type": "single",
+              "text": "\"However\" is closest in meaning to…",
+              "options": [
+                "therefore",
+                "but",
+                "because",
+                "also"
+              ],
+              "correct": 1,
+              "points": 2
+            },
+            {
+              "id": "d355k2g0xir",
+              "type": "tf",
+              "text": "\"Significant\" means «незначительный».",
+              "correct": false,
+              "points": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "rooms": [
+      [
+        "r-demo",
+        {
+          "id": "r-demo",
+          "title": "Пробный экзамен по английскому",
+          "description": "Тест, эссе и устная часть. Спикинг откроется после теста и письменной работы.",
+          "open": true,
+          "createdAt": 1794473224371,
+          "test": {
+            "on": true,
+            "testIds": [
+              "t-grammar",
+              "t-vocab"
+            ],
+            "max": 40
+          },
+          "writing": {
+            "on": true,
+            "prompt": "Write an essay (120–180 words).\nTopic: Is online learning as effective as classroom learning? Give reasons and examples.",
+            "minWords": 120,
+            "max": 30
+          },
+          "speaking": {
+            "on": true,
+            "prompt": "Part 1. Tell me about yourself: your studies and hobbies.\nPart 2. Describe a skill you learned recently. How did you learn it? Why was it useful?\nPart 3. Does technology make learning easier? Why or why not?",
+            "minutes": 5,
+            "max": 30
+          }
+        }
+      ],
+      [
+        "aat1qae2ecj",
+        {
+          "id": "aat1qae2ecj",
+          "title": "экзамен",
+          "description": "",
+          "open": true,
+          "createdAt": 1794473292835,
+          "test": {
+            "on": true,
+            "testIds": [
+              "t-grammar"
+            ],
+            "max": 40
+          },
+          "writing": {
+            "on": true,
+            "prompt": "эссе",
+            "minWords": 120,
+            "max": 30
+          },
+          "speaking": {
+            "on": true,
+            "prompt": "писька",
+            "minutes": 5,
+            "max": 30
+          }
+        }
+      ]
+    ],
+    "attempts": [
+      [
+        "h5fxp99p6nt",
+        {
+          "id": "h5fxp99p6nt",
+          "userId": "u-student",
+          "roomId": "r-demo",
+          "testId": "t-vocab",
+          "testTitle": "Vocabulary & Articles",
+          "startedAt": 1794455844764,
+          "finishedAt": 1794455880184,
+          "duration": 35420,
+          "auto": false,
+          "timeLimit": 8,
+          "score": 6,
+          "max": 9,
+          "percent": 67,
+          "passed": true,
+          "passPercent": 60,
+          "showAnswers": true,
+          "details": [
+            {
+              "text": "Match the words with their translations.",
+              "type": "match",
+              "time": 14805,
+              "earned": 2,
+              "max": 4,
+              "status": "partial",
+              "user": "achieve → достигать; evidence → проблема; improve → улучшать; issue → доказательство",
+              "corr": "achieve → достигать; evidence → доказательство; improve → улучшать; issue → проблема"
+            },
+            {
+              "text": "I saw ___ elephant at the zoo.",
+              "type": "single",
+              "time": 5773,
+              "earned": 0,
+              "max": 1,
+              "status": "wrong",
+              "user": "the",
+              "corr": "an"
+            },
+            {
+              "text": "___ sun is very hot today.",
+              "type": "single",
+              "time": 3903,
+              "earned": 1,
+              "max": 1,
+              "status": "correct",
+              "user": "The",
+              "corr": "The"
+            },
+            {
+              "text": "\"However\" is closest in meaning to…",
+              "type": "single",
+              "time": 6235,
+              "earned": 2,
+              "max": 2,
+              "status": "correct",
+              "user": "but",
+              "corr": "but"
+            },
+            {
+              "text": "\"Significant\" means «незначительный».",
+              "type": "tf",
+              "time": 4704,
+              "earned": 1,
+              "max": 1,
+              "status": "correct",
+              "user": "Неверно",
+              "corr": "Неверно"
+            }
+          ]
+        }
+      ]
+    ],
+    "writings": [],
+    "queue": [],
+    "grades": []
+  }
+}
