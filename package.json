@@ -1,6 +1,12 @@
 {
-  "name": "my-awesome-package"
-}
-{
-  "version": "0.0.1"
+  "name": "exam-sync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EXAM SYNC - Экзамен",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
 }
